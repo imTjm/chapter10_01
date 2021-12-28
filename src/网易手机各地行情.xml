@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="GBK"?>
+<PhoneInfo>
+    <Brand name="华为">
+		<type name="P90">
+			<item>
+				<title><![CDATA[霸气安卓机机皇售 ?280元]]></title>
+				<link>http://tech.163.com/mobile/11/1104/13/7I16E4.html
+				</link>
+				<description><![CDATA[华为P90是一款搭载Android Z操作系统的智能型手机。该机的屏幕尺寸高达6.3英寸，使画面细腻感再度得到提升。同时，其拥有8000万像素摄像头和6000万的副摄像头，性能不输iphone ZL。11月3日，商家最新报价为  ?280元，感兴趣的朋友不妨与商家联系。             ]]>......
+				</description>
+				<pubDate>20XX-11-04 13:50:19</pubDate>
+			</item>
+		</type>
+		<type name="荣耀X">
+            <item>
+                <title><![CDATA[霸气安卓旗舰 ?280元]]></title>
+                <link>http://tech.163.com/mobile/11/1104/13/7I16E4.html
+                </link>
+                <description><![CDATA[荣耀X是一款搭载Android Z操作系统的智能型手机。该机的屏幕尺寸高达5.3英寸，使画面细腻感再度得到提升。同时，其拥有6000万像素摄像头和2000万的副摄像头，11月3日，商家最新报价为 ?280元，感兴趣的朋友不妨与商家联系。             ]]>......
+                </description>
+                <pubDate>20XX-11-04 13:50:19</pubDate>
+            </item>
+        </type>
+    </Brand>
+</PhoneInfo>

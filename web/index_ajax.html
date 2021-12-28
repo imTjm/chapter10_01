@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>注册</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+<div id="messageInfoDiv" style="display: inline"></div>
+
+</td>
+<script type="text/javascript">
+	//页面加载完成 执行
+	$(document).ready(function () {
+
+        // $.get("msgServlet", "name=admin", fun, "json");
+
+
+        // $.get("msgServlet", "name=admin", function (data) {
+        //     //TODO
+        // }, "json");
+        $.post("msgServlet", "name=admin", fun, "json");
+
+        // $.getJSON("msgServlet", "name=admin", fun);
+	});
+
+    function fun(resp) {
+        console.log(resp.length)
+        var $table = $("<table border='1'></table>").
+        append("<tr>" +
+            "       <td>msgid</td>" +
+            "       <td>title</td>" +
+            "       <td>username</td>" +
+            "       <td>msgcontent</td>" +
+            "       <td>sendto</td>" +
+            "\</tr>");
+        for (let i = 0; i < resp.length; i++) {
+            $table.append("" +
+                "<tr>" +
+                "       <td>" + resp[i].sendto + "</td>" +
+                "       <td>"+ resp[i].title + "</td>" +
+                "       <td>"+ resp[i].username + "</td>" +
+                "       <td>"+ resp[i].msgcontent + "</td>" +
+                "       <td>"+ resp[i].sendto + "</td>" +
+                "</tr>");
+        };
+        $("#messageInfoDiv").append($table);
+    }
+</script>
+</body>
+</html>

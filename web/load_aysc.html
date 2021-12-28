@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+  <title>使用load()方法异步请求数据</title>
+    <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+</head>
+
+<body>
+<div id="divtest">
+  <div class="title">
+    <span class="fl">我最爱吃的水果</span>
+    <span class="fr">
+                    <input id="btnShow" type="button" value="加载" />
+                </span>
+  </div>
+  <ul></ul>
+</div>
+
+<script type="text/javascript">
+  $(function () {
+    $("#btnShow").bind("click", function () {
+      var $this = $(this);
+      $("ul").load("fruit.html",function(){
+        $this.attr("disabled", "true");
+      });
+    })
+  });
+</script>
+</body>
+</html>

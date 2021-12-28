@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>load</title>
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  </script>
+  <script>
+    $(document).ready(function(){
+      $("img").load(function(){
+        alert("图片已载入");
+      });
+    });
+  </script>
+</head>
+<body>
+
+<img src="//www.runoob.com/wp-content/uploads/2015/11/rock600x400.jpg" alt="图片文字描述" width="304" height="236">
+<p><b>注意:</b> 这个事件在不同浏览器效果有所不同，如果图片已缓存该事件则不会触发。</p>
+
+</body>
+</html>
