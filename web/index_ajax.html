@@ -34,6 +34,7 @@
             "       <td>username</td>" +
             "       <td>msgcontent</td>" +
             "       <td>sendto</td>" +
+            "       <td>操作</td>" +
             "\</tr>");
         for (let i = 0; i < resp.length; i++) {
             $table.append("" +
@@ -43,9 +44,14 @@
                 "       <td>"+ resp[i].username + "</td>" +
                 "       <td>"+ resp[i].msgcontent + "</td>" +
                 "       <td>"+ resp[i].sendto + "</td>" +
+                "       <td><input type='button' value='删除' onclick='delMsg("+resp[i].msgid+")'></td>" +
                 "</tr>");
         };
         $("#messageInfoDiv").append($table);
+    }
+
+    function delMsg(id){
+        alert("id:" + id);
     }
 </script>
 </body>
