@@ -13,6 +13,10 @@ import java.io.PrintWriter;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 首页短信息servlet
+ *
+ */
 public class MsgServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
